@@ -872,10 +872,10 @@ body {
 }
 
 .field__add .input:focus ~ .field__add__options {
-  display: flex;
+  display: flex !important;
 }
 .field__add__options {
-  display: none;
+  display: none !important;
 }
 
 .popup {
