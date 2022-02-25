@@ -1,0 +1,22 @@
+@use '../abstracts/variable' as *;
+@use '../abstracts/mixin' as *;
+
+button.save {
+    @include button(save);
+}
+button.cancel {
+    @include button(cancel);
+}
+button.outline {
+    @include button(outline);
+}
+button.action {
+    @include button(action);
+}
+
+button.add-carrier {
+    @include button(carrier);
+}
+.button-email {
+    @include button(btn-email);
+}

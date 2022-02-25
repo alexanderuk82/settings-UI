@@ -1,0 +1,134 @@
+@use '../abstracts/variable' as *;
+
+@mixin search($style) {
+    width: 40%;
+
+    &__box {
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        padding: 0 1.4rem;
+        width: 100%;
+        border-radius: 3px;
+    }
+
+    &__input {
+        border: 0;
+        outline: 0;
+        background-color: transparent;
+        padding: 1.2rem 0 1.2rem 1.2rem;
+        width: 100%;
+        font-family: var(--txt-main);
+        color: inherit;
+        &::placeholder {
+            color: var(--clr-blue);
+            text-transform: capitalize;
+            font-family: inherit;
+        }
+    }
+
+    &__btn {
+        background-color: transparent;
+        outline: 0;
+        border: 0;
+        width: 2rem;
+        height: 4rem;
+        cursor: pointer;
+        &--icon {
+            width: 1.4rem;
+        }
+    }
+    @if $style == topbar {
+        .search__box {
+            background-color: var(--clr-light-gray);
+        }
+    }
+    @if $style == contentBar {
+        width: 100%;
+        .search__box {
+            background-color: #ffffff;
+
+            input[type='search']::placeholder {
+                font-size: map-get($fontSize, txtMd);
+            }
+        }
+    }
+}
+// * Butons for project
+
+@mixin button($type) {
+    border: 0;
+    color: #fff;
+    border-radius: 3px;
+    padding: 1.1rem;
+    text-transform: capitalize;
+    outline: 0;
+    transition: opacity 0.2s;
+    &:hover {
+        opacity: 0.9;
+        cursor: pointer;
+    }
+
+    @if $type == save {
+        background-color: var(--clr-green);
+        img {
+            width: 1.4rem;
+            margin-right: 0.7rem;
+        }
+    }
+    @if $type == cancel {
+        background-color: transparent;
+        border: 2px solid var(--clr-light-gray);
+        color: inherit;
+    }
+    @if $type == outline {
+        background-color: transparent;
+        border: 1.5px solid var(--clr-dark-gray);
+        color: inherit;
+        font-weight: 600;
+    }
+    @if $type == action {
+        background-color: transparent;
+        border: 1.5px solid var(--clr-dark-gray);
+        color: inherit;
+        font-weight: 600;
+        padding: 0.4rem 0.5rem;
+        border-radius: 5px;
+    }
+    @if $type == btn-email {
+        border: 1.5px solid var(--clr-light-gray);
+        color: inherit;
+        font-weight: 600;
+        font-size: map-get($fontSize, txtMd);
+    }
+    @if $type == carrier {
+        background-color: var(--clr-blue);
+        color: #fff;
+        font-weight: 600;
+        font-size: map-get($fontSize, txtMd);
+    }
+}
+
+// *Mixin for form fields
+
+@mixin field($type) {
+    .form {
+        &__field {
+            margin-top: 2rem;
+            width: 35.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            .input {
+                outline: 0;
+
+                &::placeholder {
+                    text-transform: capitalize;
+                    opacity: 0.6;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,35 @@
+@use '../abstracts/variable' as *;
+@use '../abstracts/mixin' as *;
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--txt-main);
+
+    background-color: var(--clr-light-gray);
+}
+
+.main-container {
+    // background-color: var(--clr-light-gray);
+}
+
+.wrapped {
+    margin: 3rem auto;
+    background-color: #fff;
+    width: 90%;
+
+    border-radius: 0.5rem;
+    overflow: hidden;
+    padding-bottom: 3rem;
+}
