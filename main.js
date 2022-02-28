@@ -163,6 +163,9 @@ const toggle2 = document.querySelectorAll('.buttonTap2')
 const toggle3 = document.querySelectorAll('.buttonTap3')
 const toggle4 = document.querySelectorAll('.buttonTap4')
 const toggle5 = document.querySelectorAll('.buttonTap5')
+const toggle6 = document.querySelectorAll('.buttonTap6')
+const toggle7 = document.querySelectorAll('.buttonTap7')
+const toggle8 = document.querySelectorAll('.buttonTap8')
 
 // !Toggle 1 Individual user
 toggle.forEach((button) => {
@@ -226,6 +229,42 @@ function removeToogle5() {
         btns.classList.remove('checked')
     })
 }
+// !Toggle 6 Make reference mandatory
+toggle6.forEach((button) => {
+    button.addEventListener('click', () => {
+        removeToogle6()
+        button.classList.add('checked')
+    })
+})
+function removeToogle6() {
+    toggle6.forEach((btns) => {
+        btns.classList.remove('checked')
+    })
+}
+// !Toggle 7 Make reference mandatory
+toggle7.forEach((button) => {
+    button.addEventListener('click', () => {
+        removeToogle7()
+        button.classList.add('checked')
+    })
+})
+function removeToogle7() {
+    toggle7.forEach((btns) => {
+        btns.classList.remove('checked')
+    })
+}
+// !Toggle 8 Make reference mandatory
+toggle8.forEach((button) => {
+    button.addEventListener('click', () => {
+        removeToogle8()
+        button.classList.add('checked')
+    })
+})
+function removeToogle8() {
+    toggle8.forEach((btns) => {
+        btns.classList.remove('checked')
+    })
+}
 
 // !Admin settings buttons logo where
 
@@ -237,19 +276,21 @@ btnLogo.forEach((btns) => {
     })
 })
 
-// !Calling the dropbox number per page
+// !Calling the dropbox number per page ***entries***
 
-const menuNumber = document.querySelector('.entries__number')
+const menuNumber = document.querySelectorAll('.entries__number')
 
 const number = document.querySelector('.dropdown__item')
 
 const carret = document.querySelector('.carret')
 
-menuNumber.addEventListener('click', () => {
-    number.classList.toggle('hidden')
+menuNumber.forEach((entries) => {
+    entries.addEventListener('click', () => {
+        number.classList.remove('hidden')
 
-    carret.style.transform = ' rotate(225deg) translateY(52%)'
-    carret.style.right = ' -0.8rem'
+        carret.style.transform = ' rotate(225deg) translateY(52%)'
+        carret.style.right = ' -0.8rem'
+    })
 })
 
 number.addEventListener('click', (e) => {
@@ -262,9 +303,7 @@ number.addEventListener('click', (e) => {
 // !Content description add content
 
 const add = document.querySelector('.add-content')
-
 const input = document.getElementById('content')
-
 const task = document.querySelector('.form__task')
 
 add.addEventListener('click', () => {
@@ -298,3 +337,73 @@ add.addEventListener('click', () => {
         input.value = ''
     }
 })
+
+// !Customer signature ***entries***
+
+const menuNumbers = document.querySelector('.entries__customer')
+
+const numbers = document.querySelector('.dropdown__items')
+
+const carrets = document.querySelector('.carret-down')
+
+menuNumbers.addEventListener('click', () => {
+    numbers.classList.toggle('hidden')
+
+    carrets.style.transform = ' rotate(225deg) translateY(52%)'
+    carrets.style.right = ' -0.8rem'
+})
+
+numbers.addEventListener('click', (e) => {
+    e.preventDefault()
+    numbers.classList.add('hidden')
+    carrets.style.transform = ' rotate(45deg) translateY(-50%)'
+    carrets.style.right = ' -1.2rem'
+})
+
+// !Profile settings toggles and btns
+
+const btnProfile = document.querySelectorAll('.btn-profile')
+const easyBtn = document.querySelector('#easy-ship')
+const singleBtn = document.querySelector('#single-ship')
+const batchBtn = document.querySelector('#batch-ship')
+const boundInter = document.querySelector('#international')
+const boundDomes = document.querySelector('#domestic')
+const contentDoc = document.querySelector('#documents')
+const contentPack = document.querySelector('#packages')
+
+//
+// !FIRST ROW FOR DEFAULT PAGES
+//
+
+btnProfile.forEach((btns) => {
+    btns.addEventListener('click', (e) => {
+        if (btns === easyBtn) {
+            easyBtn.classList.add('active')
+            singleBtn.classList.remove('active')
+            batchBtn.classList.remove('active')
+        } else if (btns === singleBtn) {
+            easyBtn.classList.remove('active')
+            singleBtn.classList.add('active')
+            batchBtn.classList.remove('active')
+        } else if (btns === batchBtn) {
+            easyBtn.classList.remove('active')
+            singleBtn.classList.remove('active')
+            batchBtn.classList.add('active')
+        } else if (btns === boundInter) {
+            boundInter.classList.add('active')
+            boundDomes.classList.remove('active')
+        } else if (btns === boundDomes) {
+            boundInter.classList.remove('active')
+            boundDomes.classList.add('active')
+        } else if (btns === contentPack) {
+            contentDoc.classList.remove('active')
+            contentPack.classList.add('active')
+        } else if (btns === contentDoc) {
+            contentDoc.classList.add('active')
+            contentPack.classList.remove('active')
+        }
+    })
+})
+
+// !FIRST ROW FOR BOUND DEFAULT
+//

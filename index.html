@@ -853,6 +853,7 @@
                         <!-- !Commodities settings  -->
                         <div class="commodities content-text">
                             <div class="commodities__settings">
+                                <!--! Header title section -->
                                 <div
                                     class="commodities__header border-bottom pyB-1 d-flex align-center"
                                 >
@@ -910,7 +911,7 @@
                                         </button>
                                     </div>
                                 </div>
-
+                                <!--! Commodities Table header  -->
                                 <div class="table">
                                     <div
                                         class="table__header bg-main p-2 d-grid grid-column-9 justify-center myT-2 align-start colgap-3 center"
@@ -1595,161 +1596,221 @@
                                 </div>
                             </div>
                         </div>
+
+                        <!--! Section admin settings -->
                         <section class="admin content-text">
                             <h1
                                 class="title normal capitalize border-bottom pyB-1"
                             >
                                 admin settings
                             </h1>
-
-                            <div
-                                class="admin__btns d-grid grid-column-3 row-gap-2 myT-2"
-                            >
-                                <div class="admin__option">
-                                    <p class="label capitalize myB-1 semi">
-                                        Individual User quotes
-                                    </p>
-                                    <div class="toggle">
-                                        <input
-                                            type="button"
-                                            value="Yes"
-                                            class="border-0 pointer white buttonTap px-1 roundedSm py-1 btnYes checked"
-                                        />
-                                        <input
-                                            type="button"
-                                            value="No"
-                                            class="White border-0 pointer px-1 roundedSm ml-xsm py-1 buttonTap btnNo"
-                                        />
-                                    </div>
-                                </div>
-                                <div class="admin__option">
-                                    <p class="label capitalize myB-1 semi">
-                                        Individual User quotes
-                                    </p>
-                                    <div class="toggle">
-                                        <input
-                                            type="button"
-                                            value="Yes"
-                                            class="border-0 pointer white buttonTap2 px-1 roundedSm py-1"
-                                        />
-                                        <input
-                                            type="button"
-                                            value="No"
-                                            class="White border-0 pointer px-1 roundedSm ml-xsm py-1 buttonTap2 checked"
-                                        />
-                                    </div>
-                                </div>
-                                <div class="admin__option">
-                                    <p class="label capitalize myB-1 semi">
-                                        Make reference Mandatory
-                                    </p>
-                                    <div class="toggle">
-                                        <input
-                                            type="button"
-                                            value="Yes"
-                                            class="border-0 pointer white buttonTap3 px-1 roundedSm py-1 checked"
-                                        />
-                                        <input
-                                            type="button"
-                                            value="No"
-                                            class="White border-0 pointer px-1 roundedSm ml-xsm py-1 buttonTap3"
-                                        />
-                                    </div>
-                                </div>
-                                <div class="admin__option">
-                                    <p class="label capitalize myB-1 semi">
-                                        Address Book
-                                    </p>
-                                    <div class="toggle">
-                                        <input
-                                            type="button"
-                                            value="Global"
-                                            class="border-0 pointer white buttonTap4 px-1 roundedSm py-1 checked"
-                                        />
-                                        <input
-                                            type="button"
-                                            value="User"
-                                            class="White border-0 pointer px-1 roundedSm ml-xsm py-1 buttonTap4"
-                                        />
-                                    </div>
-                                </div>
-                                <div class="admin__option">
-                                    <p class="label capitalize myB-1 semi">
-                                        Require Department Number
-                                    </p>
-                                    <div class="toggle">
-                                        <input
-                                            type="button"
-                                            value="Yes"
-                                            class="border-0 pointer white buttonTap5 px-1 roundedSm py-1 checked"
-                                        />
-                                        <input
-                                            type="button"
-                                            value="No"
-                                            class="White border-0 pointer px-1 roundedSm ml-xsm py-1 buttonTap5"
-                                        />
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div
-                                class="admin__upload d-grid grid-column-2 myT-5"
-                            >
-                                <!--!Box Upload -->
-                                <div class="admin__upload__logo">
-                                    <p class="label capitalize myB-1 semi">
-                                        Upload your logo
-                                    </p>
-
-                                    <div
-                                        class="logo__box w-33rem bg-light-gray p-4 d-flex flex-column rounded-3 text-center pointer myT-2"
-                                    >
-                                        <input
-                                            type="file"
-                                            id="file-upload"
-                                            class="hidden"
-                                        />
-                                        <label for="file-upload">
-                                            <img
-                                                src="images/icon-upload.svg"
-                                                alt="logo-upload"
-                                                class="w-7 pointer"
+                            <form action="#" class="setting-admin">
+                                <div
+                                    class="admin__btns d-grid grid-column-3 row-gap-2 myT-2"
+                                >
+                                    <div class="admin__option">
+                                        <p class="label capitalize myB-1 semi">
+                                            Individual User quotes
+                                        </p>
+                                        <div class="toggle">
+                                            <input
+                                                type="button"
+                                                value="Yes"
+                                                class="border-0 pointer white buttonTap px-1 roundedSm py-1 btnYes checked"
                                             />
-                                            <p
-                                                class="logo__box__text px-2 myT-2 line-height-25"
-                                            >
-                                                Drag and drop your file to
-                                                upload or
-                                                <span class="underline pointer"
-                                                    >Browse</span
+                                            <input
+                                                type="button"
+                                                value="No"
+                                                class="White border-0 pointer px-1 roundedSm ml-xsm py-1 buttonTap btnNo"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="admin__option">
+                                        <p class="label capitalize myB-1 semi">
+                                            Individual User quotes
+                                        </p>
+                                        <div class="toggle">
+                                            <input
+                                                type="button"
+                                                value="Yes"
+                                                class="border-0 pointer white buttonTap2 px-1 roundedSm py-1"
+                                            />
+                                            <input
+                                                type="button"
+                                                value="No"
+                                                class="White border-0 pointer px-1 roundedSm ml-xsm py-1 buttonTap2 checked"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="admin__option">
+                                        <p class="label capitalize myB-1 semi">
+                                            Make reference Mandatory
+                                        </p>
+                                        <div class="toggle">
+                                            <input
+                                                type="button"
+                                                value="Yes"
+                                                class="border-0 pointer white buttonTap3 px-1 roundedSm py-1 checked"
+                                            />
+                                            <input
+                                                type="button"
+                                                value="No"
+                                                class="White border-0 pointer px-1 roundedSm ml-xsm py-1 buttonTap3"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="admin__option">
+                                        <p class="label capitalize myB-1 semi">
+                                            Address Book
+                                        </p>
+                                        <div class="toggle">
+                                            <input
+                                                type="button"
+                                                value="Global"
+                                                class="border-0 pointer white buttonTap4 px-1 roundedSm py-1 checked"
+                                            />
+                                            <input
+                                                type="button"
+                                                value="User"
+                                                class="White border-0 pointer px-1 roundedSm ml-xsm py-1 buttonTap4"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="admin__option">
+                                        <p class="label capitalize myB-1 semi">
+                                            Require Department Number
+                                        </p>
+                                        <div class="toggle">
+                                            <input
+                                                type="button"
+                                                value="Yes"
+                                                class="border-0 pointer white buttonTap5 px-1 roundedSm py-1 checked"
+                                            />
+                                            <input
+                                                type="button"
+                                                value="No"
+                                                class="White border-0 pointer px-1 roundedSm ml-xsm py-1 buttonTap5"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="admin__upload d-grid grid-column-2 myT-5"
+                                >
+                                    <!--!Box Upload -->
+                                    <div class="admin__upload__logo">
+                                        <p class="label capitalize myB-1 semi">
+                                            Upload your logo
+                                        </p>
+
+                                        <div
+                                            class="logo__box w-33rem bg-light-gray p-4 d-flex flex-column rounded-3 text-center pointer myT-2"
+                                        >
+                                            <input
+                                                type="file"
+                                                id="file-upload"
+                                                class="hidden"
+                                            />
+                                            <label for="file-upload">
+                                                <img
+                                                    src="images/icon-upload.svg"
+                                                    alt="logo-upload"
+                                                    class="w-7 pointer"
+                                                />
+                                                <p
+                                                    class="logo__box__text px-2 myT-2 line-height-25"
                                                 >
-                                                your file
-                                            </p>
-                                        </label>
+                                                    Drag and drop your file to
+                                                    upload or
+                                                    <span
+                                                        class="underline pointer"
+                                                        >Browse</span
+                                                    >
+                                                    your file
+                                                </p>
+                                            </label>
+                                        </div>
+                                        <div
+                                            class="button__option-logo d-flex myT-2"
+                                        >
+                                            <button
+                                                class="d-flex align-center mr-2 border-0 transparent pointer"
+                                            >
+                                                <img
+                                                    src="images/icon-print.svg"
+                                                    alt="print-label"
+                                                    class="mr-sm"
+                                                />
+                                                Print label test
+                                            </button>
+                                            <button
+                                                class="d-flex align-center border-0 transparent pointer"
+                                            >
+                                                <img
+                                                    src="images/icon-delete-red.svg"
+                                                    alt="delete-logo"
+                                                    class="w-2 mr-sm"
+                                                />
+                                                Delete logo
+                                            </button>
+                                        </div>
                                     </div>
-                                    <div
-                                        class="button__option-logo d-flex myT-2"
-                                    >
-                                        <button
-                                            class="d-flex align-center mr-2 border-0 transparent pointer"
+                                    <!--!Where uplaod-->
+                                    <div class="admin__upload__logo">
+                                        <p class="label capitalize myB-1 semi">
+                                            Select where you would you like to
+                                            display your logo
+                                        </p>
+
+                                        <div
+                                            class="upload__options d-flex flex-column gap-1 align-start myT-2"
                                         >
-                                            <img
-                                                src="images/icon-print.svg"
-                                                alt="print-label"
-                                                class="mr-sm"
-                                            />
-                                            Print label test
-                                        </button>
-                                        <button
-                                            class="d-flex align-center border-0 transparent pointer"
-                                        >
-                                            <img
-                                                src="images/icon-delete-red.svg"
-                                                alt="delete-logo"
-                                                class="w-2 mr-sm"
-                                            />
-                                            Delete logo
-                                        </button>
+                                            <button
+                                                class="option__where rounded-6 border-gray d-flex align-center p-1 pointer bg-white active-btn"
+                                                name="comercial invoice"
+                                            >
+                                                <img
+                                                    src="images/icon-check-white.svg"
+                                                    alt="check comercial invoice"
+                                                    class="mr-1"
+                                                />
+                                                Comercial Invoice
+                                            </button>
+                                            <button
+                                                class="option__where rounded-6 border-gray d-flex align-center p-1 pointer bg-white"
+                                                name="comercial invoice"
+                                            >
+                                                <img
+                                                    src="images/icon-check-white.svg"
+                                                    alt="check comercial invoice"
+                                                    class="mr-1"
+                                                />
+                                                A4 shipping label
+                                            </button>
+                                            <button
+                                                class="option__where rounded-6 border-gray d-flex align-center p-1 pointer bg-white"
+                                                name="comercial invoice"
+                                            >
+                                                <img
+                                                    src="images/icon-check-white.svg"
+                                                    alt="check comercial invoice"
+                                                    class="mr-1"
+                                                />
+                                                4x8 shipping label
+                                            </button>
+                                            <button
+                                                class="option__where rounded-6 border-gray d-flex align-center p-1 pointer bg-white"
+                                                name="comercial invoice"
+                                            >
+                                                <img
+                                                    src="images/icon-check-white.svg"
+                                                    alt="check comercial invoice"
+                                                    class="mr-1"
+                                                />
+                                                8.5x11 shipping label
+                                            </button>
+                                        </div>
                                     </div>
 
                                     <div
@@ -1767,63 +1828,7 @@
                                         <button class="cancel">Cancel</button>
                                     </div>
                                 </div>
-                                <!--!Where uplaod-->
-                                <div class="admin__upload__logo">
-                                    <p class="label capitalize myB-1 semi">
-                                        Select where you would you like to
-                                        display your logo
-                                    </p>
-
-                                    <div
-                                        class="upload__options d-flex flex-column gap-1 align-start myT-2"
-                                    >
-                                        <button
-                                            class="option__where rounded-6 border-gray d-flex align-center p-1 pointer bg-white active-btn"
-                                            name="comercial invoice"
-                                        >
-                                            <img
-                                                src="images/icon-check-white.svg"
-                                                alt="check comercial invoice"
-                                                class="mr-1"
-                                            />
-                                            Comercial Invoice
-                                        </button>
-                                        <button
-                                            class="option__where rounded-6 border-gray d-flex align-center p-1 pointer bg-white"
-                                            name="comercial invoice"
-                                        >
-                                            <img
-                                                src="images/icon-check-white.svg"
-                                                alt="check comercial invoice"
-                                                class="mr-1"
-                                            />
-                                            A4 shipping label
-                                        </button>
-                                        <button
-                                            class="option__where rounded-6 border-gray d-flex align-center p-1 pointer bg-white"
-                                            name="comercial invoice"
-                                        >
-                                            <img
-                                                src="images/icon-check-white.svg"
-                                                alt="check comercial invoice"
-                                                class="mr-1"
-                                            />
-                                            4x8 shipping label
-                                        </button>
-                                        <button
-                                            class="option__where rounded-6 border-gray d-flex align-center p-1 pointer bg-white"
-                                            name="comercial invoice"
-                                        >
-                                            <img
-                                                src="images/icon-check-white.svg"
-                                                alt="check comercial invoice"
-                                                class="mr-1"
-                                            />
-                                            8.5x11 shipping label
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
+                            </form>
                         </section>
 
                         <!-- !User list Section -->
@@ -2156,34 +2161,633 @@
                                 </div>
                                 <!-- !Content description -->
                                 <div class="form__task w-50 myT-3">
-                                    <!-- <div 
-                                        class="description d-flex justify-between pyB-2 border-bottom myT-2"
-                                    >
-                                        <p class="txtMd">Content description</p>
-                                        <button
-                                            class="delete-task border-0 outline-0 bg-white"
-                                        >
-                                            <img
-                                                src="images/icon-delete-red.svg"
-                                                alt="delete"
-                                                class="w-2 pointer"
-                                            />
-                                        </button>
-                                    </div> -->
+                                    <!-- Code generate by Javascript -->
                                 </div>
                             </div>
                         </section>
                         <section class="batch content-text">
-                            Batch settings
+                            <div class="batch__settings">
+                                <!-- !Batch settings section -->
+                                <h1
+                                    class="title normal capitalize border-bottom pyB-1"
+                                >
+                                    Batch
+                                </h1>
+                                <form class="carrier myT-2 w-40">
+                                    <input
+                                        type="select"
+                                        placeholder="Default"
+                                        id="batch"
+                                        class="input p-1 border-gray rounded w-100"
+                                        list="batch-map"
+                                    />
+
+                                    <datalist id="batch-map">
+                                        <option value="Option-1"></option>
+                                        <option value="Option-2"></option>
+                                        <option value="Option-3"></option>
+                                        <option value="Option-4"></option>
+                                    </datalist>
+
+                                    <button
+                                        class="save d-flex align-center myT-2"
+                                    >
+                                        <img
+                                            src="images/check-btn-white.svg"
+                                            alt=""
+                                        />
+                                        save changes
+                                    </button>
+                                </form>
+                            </div>
                         </section>
+
+                        <!--! Signature section -->
+
                         <section class="signature content-text">
-                            Signature settings
+                            <div class="signature__settings">
+                                <!--! Header title section -->
+                                <div
+                                    class="commodities__header border-bottom pyB-1 d-flex align-center"
+                                >
+                                    <h1 class="title normal capitalize mr-auto">
+                                        customer signature
+                                    </h1>
+                                    <div
+                                        class="commodities__header__right d-grid grid-column-auto3 align-center colgap-1"
+                                    >
+                                        <form action="#" class="search-content">
+                                            <div
+                                                class="search__box rounded border-gray"
+                                            >
+                                                <input
+                                                    type="search"
+                                                    class="search__input"
+                                                    placeholder="Search"
+                                                />
+                                                <button
+                                                    type="submit"
+                                                    class="search__btn"
+                                                >
+                                                    <img
+                                                        src="images/icon-search.svg"
+                                                        alt="icon-search"
+                                                        class="search__btn--icon"
+                                                    />
+                                                </button>
+                                            </div>
+                                        </form>
+
+                                        <button
+                                            class="outline d-flex align-center"
+                                        >
+                                            <img
+                                                src="images/icon-plus.svg"
+                                                alt="add commodity"
+                                                class="w-small"
+                                            />
+                                            <span class="txtMd ml-1"
+                                                >add new signature</span
+                                            >
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <!--! Entries section -->
+
+                                <div class="entries">
+                                    <div
+                                        class="note__entries d-flex myT-2 align-center justify-content-end"
+                                    >
+                                        <div
+                                            class="entries d-flex align-center gap-1"
+                                        >
+                                            <p
+                                                class="txtMd semi capitalize no-wrap"
+                                            >
+                                                show entries
+                                            </p>
+                                            <nav class="dropdown relative">
+                                                <div
+                                                    class="entries__customer w-6 border-gray py-sm px-1 rounded-3 pointer"
+                                                >
+                                                    <input
+                                                        type="button"
+                                                        id="dropdown"
+                                                        class="input-dropdown hidden"
+                                                    />
+                                                    <label
+                                                        for="dropdown "
+                                                        class="relative outline pointer"
+                                                        id="number-drop"
+                                                    >
+                                                        <span>10</span>
+                                                        <span
+                                                            class="carret-down transition-ease"
+                                                        >
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                                <ul
+                                                    class="dropdown__items d-flex flex-column gap-1 align-center myT-1 shadow-action p-2 absolute z-index-100 top-36 bg-white rounded-3 left-3 hidden"
+                                                >
+                                                    <a
+                                                        href="#"
+                                                        class="nodecoration main-color"
+                                                        >20</a
+                                                    >
+                                                    <a
+                                                        href="#"
+                                                        class="nodecoration main-color"
+                                                        >30</a
+                                                    >
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- !Content table -->
+
+                                <div class="table">
+                                    <div
+                                        class="table__header bg-main p-2 d-grid grid-column-5 justify-center myT-2 align-start colgap-3 center"
+                                    >
+                                        <h4 class="capitalize White">
+                                            contact name
+                                        </h4>
+                                        <h4 class="capitalize White">
+                                            Phone
+                                        </h4>
+
+                                        <h4 class="capitalize White">
+                                            signature
+                                        </h4>
+                                        <h4 class="capitalize White">
+                                            default
+                                        </h4>
+                                        <h4 class="capitalize White">
+                                            actions
+                                        </h4>
+                                    </div>
+
+                                    <div class="table__content myT-2">
+                                        <!--! Table content--1 -->
+                                        <div
+                                            class="table__content__item d-grid grid-column-5 justify-center myT-2 align-start center border-bottom pyB-2"
+                                        >
+                                            <a
+                                                href="#"
+                                                class="capitalize medium link-info"
+                                                >name goes in here</a
+                                            >
+                                            <p class="capitalize medium">
+                                                1234567
+                                            </p>
+                                            <p class="capitalize medium">
+                                                1234/1234
+                                            </p>
+                                            <p class="capitalize medium">
+                                                product name
+                                            </p>
+
+                                            <div class="action-btn relative">
+                                                <button
+                                                    class="icon transparent outline-0 pointer border-0 edit-package"
+                                                >
+                                                    <img
+                                                        src="images/icon-edit-blue.svg"
+                                                        alt="edit"
+                                                        class="w-2"
+                                                    />
+                                                </button>
+                                                <button
+                                                    class="icon transparent outline-0 pointer border-0"
+                                                >
+                                                    <img
+                                                        src="images/icon-delete-red.svg"
+                                                        alt="carret-down"
+                                                        class="w-2"
+                                                    />
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <!--! Table content--2 -->
+                                        <div
+                                            class="table__content__item d-grid grid-column-5 justify-center myT-2 align-start center border-bottom pyB-2"
+                                        >
+                                            <a
+                                                href="#"
+                                                class="capitalize medium link-info"
+                                                >name goes in here</a
+                                            >
+                                            <p class="capitalize medium">
+                                                1234567
+                                            </p>
+                                            <p class="capitalize medium">
+                                                1234/1234
+                                            </p>
+                                            <p class="capitalize medium">
+                                                product name
+                                            </p>
+
+                                            <div class="action-btn relative">
+                                                <button
+                                                    class="icon transparent outline-0 pointer border-0 edit-package"
+                                                >
+                                                    <img
+                                                        src="images/icon-edit-blue.svg"
+                                                        alt="edit"
+                                                        class="w-2"
+                                                    />
+                                                </button>
+                                                <button
+                                                    class="icon transparent outline-0 pointer border-0"
+                                                >
+                                                    <img
+                                                        src="images/icon-delete-red.svg"
+                                                        alt="carret-down"
+                                                        class="w-2"
+                                                    />
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <!--! Table content--3 -->
+                                        <div
+                                            class="table__content__item d-grid grid-column-5 justify-center myT-2 align-start center border-bottom pyB-2"
+                                        >
+                                            <a
+                                                href="#"
+                                                class="capitalize medium link-info"
+                                                >name goes in here</a
+                                            >
+                                            <p class="capitalize medium">
+                                                1234567
+                                            </p>
+                                            <p class="capitalize medium">
+                                                1234/1234
+                                            </p>
+                                            <p class="capitalize medium">
+                                                product name
+                                            </p>
+
+                                            <div class="action-btn relative">
+                                                <button
+                                                    class="icon transparent outline-0 pointer border-0 edit-package"
+                                                >
+                                                    <img
+                                                        src="images/icon-edit-blue.svg"
+                                                        alt="edit"
+                                                        class="w-2"
+                                                    />
+                                                </button>
+                                                <button
+                                                    class="icon transparent outline-0 pointer border-0"
+                                                >
+                                                    <img
+                                                        src="images/icon-delete-red.svg"
+                                                        alt="carret-down"
+                                                        class="w-2"
+                                                    />
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </section>
                         <section class="print content-text">
-                            Print settings
+                            <div class="print__settings">
+                                <h1
+                                    class="title normal capitalize border-bottom pyB-1"
+                                >
+                                    Print settings
+                                </h1>
+
+                                <form
+                                    action="#
+                                "
+                                    class="settings w-80 myT-2 d-grid grid-column-2 gap-2"
+                                >
+                                    <!--! Field 1 -->
+
+                                    <div class="form__field d-flex flex-column">
+                                        <label
+                                            for="reference"
+                                            class="label capitalize myB-1 semi"
+                                            >ddefault label size</label
+                                        >
+                                        <input
+                                            type="text"
+                                            id="label"
+                                            class="input p-1 border-gray rounded outline-0"
+                                            placeholder="Ex.A4"
+                                            list="label-size"
+                                        />
+
+                                        <datalist id="label-size">
+                                            <option value="A4"></option>
+                                            <option value="A5"></option>
+                                            <option value="A6"></option>
+                                            <option value='4" x6"'></option>
+                                        </datalist>
+                                    </div>
+
+                                    <!--! Field 2 -->
+
+                                    <div class="form__field d-flex flex-column">
+                                        <label
+                                            for="reference"
+                                            class="label capitalize myB-1 semi"
+                                            >Default Commercial Invoice
+                                            Size</label
+                                        >
+                                        <input
+                                            type="text"
+                                            id="label"
+                                            class="input p-1 border-gray rounded outline-0"
+                                            placeholder="Ex.A4"
+                                            list="label-size"
+                                        />
+
+                                        <datalist id="label-size">
+                                            <option value="A4"></option>
+                                            <option value="A5"></option>
+                                            <option value="A6"></option>
+                                            <option value='4" x6"'></option>
+                                        </datalist>
+                                    </div>
+
+                                    <!--! Field 3 -->
+
+                                    <div class="form__field d-flex flex-column">
+                                        <label
+                                            for="reference"
+                                            class="label capitalize myB-1 semi"
+                                            >Default Packing Slip Size</label
+                                        >
+                                        <input
+                                            type="text"
+                                            id="label"
+                                            class="input p-1 border-gray rounded outline-0"
+                                            placeholder="Ex.A4"
+                                            list="label-size"
+                                        />
+
+                                        <datalist id="label-size">
+                                            <option value="A4"></option>
+                                            <option value="A5"></option>
+                                            <option value="A6"></option>
+                                            <option value='4" x6"'></option>
+                                        </datalist>
+                                    </div>
+
+                                    <!--! Field 4 -->
+
+                                    <div class="form__field d-flex flex-column">
+                                        <label
+                                            for="reference"
+                                            class="label capitalize myB-1 semi"
+                                            >Default Shipment Detail Size</label
+                                        >
+                                        <input
+                                            type="text"
+                                            id="label"
+                                            class="input p-1 border-gray rounded outline-0"
+                                            placeholder="Ex.A4"
+                                            list="label-size"
+                                        />
+
+                                        <datalist id="label-size">
+                                            <option value="A4"></option>
+                                            <option value="A5"></option>
+                                            <option value="A6"></option>
+                                            <option value='4" x6"'></option>
+                                        </datalist>
+                                    </div>
+                                    <!--! Buttons toggles -->
+                                    <div class="admin__option">
+                                        <p class="label capitalize myB-1 semi">
+                                            Include receipt when printing labels
+                                        </p>
+                                        <div class="toggle">
+                                            <input
+                                                type="button"
+                                                value="Yes"
+                                                class="border-0 pointer white buttonTap6 px-1 roundedSm py-1 checked"
+                                            />
+                                            <input
+                                                type="button"
+                                                value="No"
+                                                class="White border-0 pointer px-1 roundedSm ml-xsm py-1 buttonTap6"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="admin__option">
+                                        <p class="label capitalize myB-1 semi">
+                                            Hide billing info on receipt
+                                        </p>
+                                        <div class="toggle">
+                                            <input
+                                                type="button"
+                                                value="Yes"
+                                                class="border-0 pointer white buttonTap7 px-1 roundedSm py-1 checked"
+                                            />
+                                            <input
+                                                type="button"
+                                                value="No"
+                                                class="White border-0 pointer px-1 roundedSm ml-xsm py-1 buttonTap7"
+                                            />
+                                        </div>
+                                    </div>
+                                    <!-- !Button save form -->
+
+                                    <div class="buttons-form d-flex myT-2">
+                                        <button
+                                            class="save d-flex align-center mr-2"
+                                        >
+                                            <img
+                                                src="images/check-btn-white.svg"
+                                                alt=""
+                                            />
+                                            save
+                                        </button>
+                                        <button class="cancel cancel-package">
+                                            print test label
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
                         </section>
+
+                        <!--! Profile settings -->
                         <section class="profile content-text">
-                            profile settings
+                            <h1
+                                class="title normal capitalize border-bottom pyB-1"
+                            >
+                                profile defaults
+                            </h1>
+                            <form
+                                action="#profile"
+                                class="d-grid row-gap-2 myT-2"
+                            >
+                                <div
+                                    class="profile__first__row d-grid grid-column-3 gap-2 w-70"
+                                >
+                                    <div class="profile__options">
+                                        <label
+                                            for="reference"
+                                            class="label capitalize myB-1 semi"
+                                            >Default home page</label
+                                        >
+
+                                        <div
+                                            class="profile__options__default d-flex gap-1 myT-1"
+                                        >
+                                            <input
+                                                type="button"
+                                                value="easy chip"
+                                                class="btn-profile active"
+                                                id="easy-ship"
+                                            />
+                                            <input
+                                                type="button"
+                                                value="batch ship"
+                                                class="btn-profile"
+                                                id="single-ship"
+                                            />
+                                            <input
+                                                type="button"
+                                                value="easy chip"
+                                                class="btn-profile"
+                                                id="batch-ship"
+                                            />
+                                        </div>
+                                    </div>
+
+                                    <div class="profile__options">
+                                        <label
+                                            for="reference"
+                                            class="label capitalize myB-1 semi"
+                                            >Bound default</label
+                                        >
+
+                                        <div
+                                            class="profile__options__default d-flex gap-1 myT-1"
+                                        >
+                                            <input
+                                                type="button"
+                                                value="International"
+                                                class="btn-profile active"
+                                                id="international"
+                                            />
+                                            <input
+                                                type="button"
+                                                value="Domestic"
+                                                class="btn-profile"
+                                                id="domestic"
+                                            />
+                                        </div>
+                                    </div>
+
+                                    <div class="profile__options">
+                                        <label
+                                            for="reference"
+                                            class="label capitalize myB-1 semi"
+                                            >content default</label
+                                        >
+
+                                        <div
+                                            class="profile__options__default d-flex gap-1 myT-1"
+                                        >
+                                            <input
+                                                type="button"
+                                                value="Document"
+                                                class="btn-profile active"
+                                                id="documents"
+                                            />
+                                            <input
+                                                type="button"
+                                                value="Package"
+                                                class="btn-profile"
+                                                id="packages"
+                                            />
+                                        </div>
+                                    </div>
+
+                                    <div class="field__profile">
+                                        <label
+                                            class="label capitalize myB-1 semi"
+                                            >Dutiable Party - Export</label
+                                        >
+                                        <input
+                                            type="text"
+                                            id="duty"
+                                            class="input p-1 border-gray rounded outline-0 w-100 myT-1"
+                                            placeholder="Duty by receiver"
+                                            list="duty-export"
+                                        />
+
+                                        <datalist id="duty-export">
+                                            <option
+                                                value="Duty paid by receiver"
+                                            ></option>
+                                            <option
+                                                value="Duty paid by sender"
+                                            ></option>
+                                        </datalist>
+                                    </div>
+                                    <div class="field__profile w-70 grid-2-4">
+                                        <label
+                                            class="label capitalize myB-1 semi"
+                                            >Dutiable Party - Import</label
+                                        >
+                                        <input
+                                            type="text"
+                                            id="dutyImport"
+                                            class="input p-1 border-gray rounded outline-0 w-100 myT-1"
+                                            placeholder="Duty by receiver"
+                                            list="duty-import"
+                                        />
+
+                                        <datalist id="duty-import">
+                                            <option
+                                                value="Duty paid by receiver"
+                                            ></option>
+                                            <option
+                                                value="Duty paid by sender"
+                                            ></option>
+                                        </datalist>
+                                    </div>
+
+                                    <div class="options__receipt myT-1">
+                                        <label
+                                            class="label capitalize myB-1 semi"
+                                            >Include receipt when printing labels<label
+                                        >
+                                        <div class="toggle myT-1">
+                                            <input
+                                                type="button"
+                                                value="Yes"
+                                                class="border-0 pointer white buttonTap8 px-1 roundedSm py-1 checked"
+                                            />
+                                            <input
+                                                type="button"
+                                                value="No"
+                                                class="White border-0 pointer px-1 roundedSm ml-xsm py-1 buttonTap8"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="profile__first__row">
+                                    second row
+                                </div>
+                                <div class="profile__first__row">
+                                    third row
+                                </div>
+                            </form>
                         </section>
                         <section class="payment content-text">
                             Payment settings

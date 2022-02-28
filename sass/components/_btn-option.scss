@@ -13,6 +13,9 @@ button.outline {
 button.action {
     @include button(action);
 }
+.btn-profile {
+    @include button(profile);
+}
 
 button.add-carrier {
     @include button(carrier);
