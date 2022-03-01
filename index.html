@@ -2636,7 +2636,7 @@
                                 <div
                                     class="profile__first__row d-grid grid-column-3 gap-2 w-70"
                                 >
-                                    <div class="profile__options">
+                                    <div class="profile__options ">
                                         <label
                                             for="reference"
                                             class="label capitalize myB-1 semi"
@@ -2666,7 +2666,7 @@
                                             />
                                         </div>
                                     </div>
-
+                                    <!-- !Buttons Options first row -->
                                     <div class="profile__options">
                                         <label
                                             for="reference"
@@ -2780,17 +2780,660 @@
                                             />
                                         </div>
                                     </div>
+                                    <div class="options__receipt myT-1 grid-2-4">
+                                        <label
+                                            class="label capitalize myB-1 semi"
+                                            >Hide billing info on receipt<label
+                                        >
+                                        <div class="toggle myT-1">
+                                            <input
+                                                type="button"
+                                                value="Yes"
+                                                class="border-0 pointer white buttonTap9 px-1 roundedSm py-1 checked"
+                                            />
+                                            <input
+                                                type="button"
+                                                value="No"
+                                                class="White border-0 pointer px-1 roundedSm ml-xsm py-1 buttonTap9"
+                                            />
+                                        </div>
+
+                                    </div>
+                                    <div class="profile__options">
+                                        <label
+                                            for="reference"
+                                            class="label capitalize myB-1 semi"
+                                            >Default label pop-up</label
+                                        >
+
+                                        <div
+                                            class="profile__options__default d-flex gap-1 myT-1"
+                                        >
+                                            <input
+                                                type="button"
+                                                value="Standard"
+                                                class="btn-profile active"
+                                                id="standard"
+                                            />
+                                            <input
+                                                type="button"
+                                                value="Thermal"
+                                                class="btn-profile"
+                                                id="thermal"
+                                            />
+                                        </div>
+                                    </div>
+
+                                    <div class="field__profile w-70 grid-2-4">
+                                        <label
+                                            class="label capitalize myB-1 semi"
+                                            >Default orders per page</label
+                                        >
+                                        <input
+                                            type="text"
+                                            id="order-pages"
+                                            class="input p-1 border-gray rounded outline-0 w-100 myT-1"
+                                            value='10'
+                                            list="orderpages"
+                                        />
+
+                                        <datalist id="orderpages">
+                                            <option
+                                                value="20"
+                                            ></option>
+                                           
+                                            <option
+                                                value="30"
+                                            ></option>
+                                           
+                                            <option
+                                                value="40"
+                                            ></option>
+                                           
+                                        </datalist>
+                                    </div>
+
+
+                                    <div class="profile__options">
+                                        <div class="label__profile d-flex align-center myB-1">
+
+                                            <label
+                                                for="reference"
+                                                class="label capitalize  semi mr-1"
+                                                >Shipping address suggestions</label
+                                            >
+    
+                                            <div class="tooltip">
+                                                <span class='tooltip__icon'>
+
+                                                    <i data-feather="help-circle" class='w-1 ' ></i>
+                                                </span> 
+                                                <span class='tooltip__text'> 
+                                                   Shipping address suggestions helps you automatically fill in your shipping address. You can choose to have the system suggest shipping addresses from your address book or from a general global search. Tip: If you ship regularly to specific addresses we recommend using the address book. 
+                                                </span> 
+    
+                                            </div>
+                                        </div>
+
+                                        <div
+                                            class="profile__options__default d-flex gap-1 myT-1"
+                                        >
+                                            <input
+                                                type="button"
+                                                value="Address Book"
+                                                class="btn-profile active"
+                                                id="address-ship" 
+                                            />
+                                            <input
+                                                type="button"
+                                                value="Global Search"
+                                                class="btn-profile"
+                                                id="global-search" 
+                                            />
+                                        </div>
+                                    </div>
+
                                 </div>
+                                <!-- !Separator or divider -->
+                                <div class="separator border-bottom" ></div>
+
+                                <!--! Second row domestic or International -->
                                 <div class="profile__first__row">
-                                    second row
+                                   <div class="second__row d-grid grid-column-2 gap-2 w-60">
+
+                                       <!-- !Left side Domestic -->
+
+                                       <div class="domestic__service d-flex flex-column gap-2">
+
+                                        <h3 class="txtLg normal">Domestic</h3>
+
+
+                                        <!-- !First field -->
+                                        <div class="field__profile"> 
+                                            <label
+                                                class="label capitalize myB-1 semi"
+                                                >Carrier</label
+                                            >
+                                            <input
+                                                type="text"
+                                              
+                                                class="input p-1 border-gray rounded outline-0 w-100 myT-1"
+                                                value='Duty paid by receiver'
+                                                list="carrier-list"
+                                            />
+    
+                                            <datalist id="carrier-list">
+                                                <option
+                                                    value="Duty paid by receiver"
+                                                ></option>
+                                                <option
+                                                    value="Duty paid by sender"
+                                                ></option>
+                                             
+                                               
+                                            </datalist>
+                                        </div>
+                                        <!-- !second field -->
+                                        <div class="field__profile"> 
+                                            <label
+                                                class="label capitalize myB-1 semi"
+                                                >Service type</label
+                                            >
+                                            <input
+                                                type="text"
+                                               
+                                                class="input p-1 border-gray rounded outline-0 w-100 myT-1"
+                                                value='Duty paid by receiver'
+                                                list="service__type"
+                                            />
+    
+                                            <datalist id="service__type">
+                                                <option
+                                                    value="Duty paid by receiver"
+                                                ></option>
+                                                <option
+                                                    value="Duty paid by sender"
+                                                ></option>
+                                             
+                                               
+                                            </datalist>
+                                        </div>
+                                        <!-- !third field -->
+                                        <div class="field__profile"> 
+                                            <label
+                                                class="label capitalize myB-1 semi"
+                                                >Package type</label 
+                                            >
+                                            <input
+                                                type="text" 
+                                                
+                                                class="input p-1 border-gray rounded outline-0 w-100 myT-1"
+                                                value='Duty paid by receiver'
+                                                list="package__type"
+                                            />
+    
+                                            <datalist id="package__type">
+                                                <option
+                                                    value="Duty paid by receiver"
+                                                ></option>
+                                                <option
+                                                    value="Duty paid by sender"
+                                                ></option>
+                                             
+                                               
+                                            </datalist>
+                                        </div>
+                                       </div>
+                                       <div class="international__service">
+                                          <!-- !Right side International -->
+
+                                       <div class="domestic__service d-flex flex-column gap-2">
+
+                                        <h3 class="txtLg normal">International</h3>
+
+
+                                        <!-- !First field -->
+                                        <div class="field__profile"> 
+                                            <label
+                                                class="label capitalize myB-1 semi"
+                                                >Carrier</label
+                                            >
+                                            <input
+                                                type="text"
+                                              
+                                                class="input p-1 border-gray rounded outline-0 w-100 myT-1"
+                                                value='Duty paid by receiver'
+                                                list="carrier-list"
+                                            />
+    
+                                            <datalist id="carrier-list">
+                                                <option
+                                                    value="Duty paid by receiver"
+                                                ></option>
+                                                <option
+                                                    value="Duty paid by sender"
+                                                ></option>
+                                             
+                                               
+                                            </datalist>
+                                        </div>
+                                        <!-- !second field -->
+                                        <div class="field__profile"> 
+                                            <label
+                                                class="label capitalize myB-1 semi"
+                                                >Service type</label
+                                            >
+                                            <input
+                                                type="text"
+                                               
+                                                class="input p-1 border-gray rounded outline-0 w-100 myT-1"
+                                                value='Duty paid by receiver'
+                                                list="service__type"
+                                            />
+    
+                                            <datalist id="service__type">
+                                                <option
+                                                    value="Duty paid by receiver"
+                                                ></option>
+                                                <option
+                                                    value="Duty paid by sender"
+                                                ></option>
+                                             
+                                               
+                                            </datalist>
+                                        </div>
+                                        <!-- !third field -->
+                                        <div class="field__profile"> 
+                                            <label
+                                                class="label capitalize myB-1 semi"
+                                                >Package type</label 
+                                            >
+                                            <input
+                                                type="text" 
+                                                
+                                                class="input p-1 border-gray rounded outline-0 w-100 myT-1"
+                                                value='Duty paid by receiver'
+                                                list="package__type"
+                                            />
+    
+                                            <datalist id="package__type">
+                                                <option
+                                                    value="Duty paid by receiver"
+                                                ></option>
+                                                <option
+                                                    value="Duty paid by sender"
+                                                ></option>
+                                             
+                                               
+                                            </datalist>
+                                        </div>
+                                       </div>
+                                       </div>
+                                   </div>
                                 </div>
+
+                                   <!-- !Separator or divider -->
+                                   <div class="separator border-bottom" ></div>
+
+
+                                <!-- ! Third row Comercial invoices -->
+
                                 <div class="profile__first__row">
-                                    third row
+                                    <h3 class="txtLg normal">Comercial invoices defaults</h3>
+
+                                    <div
+                                    class="profile__first__row d-grid grid-column-3 gap-2 w-91">
+                                    
+                                    <div class="profile__options myT-2 ">
+                                        <label
+                                            for="reference"
+                                            class="label capitalize myB-1 semi"
+                                            >Invoice type</label  
+                                        >
+
+                                        <div
+                                            class="profile__options__default d-flex gap-1 myT-1"
+                                        >
+                                            <input
+                                                type="button"
+                                                value="Commercial"
+                                                class="btn-profile active"
+                                                id="invoice-comercial"
+                                            />
+                                            <input
+                                                type="button"
+                                                value="Proforma"
+                                                class="btn-profile"
+                                                id="invoice-proforma"
+                                            />
+                                         
+                                        </div>
+                                    </div>
+
+
+                                    <div class="profile__options myT-2 grid-2-4 ">
+                                        <label
+                                            for="reference"
+                                            class="label capitalize myB-1 semi"
+                                            >Peperless submission</label
+                                        >
+
+                                        <div
+                                            class="profile__options__default d-flex myT-1"
+                                        >
+                                           
+                                        <input
+                                        type="button"
+                                        value="Yes"
+                                        class="border-0 pointer white buttonTap7 px-1 roundedSm py-1 checked"
+                                    />
+                                    <input
+                                        type="button"
+                                        value="No"
+                                        class="White border-0 pointer px-1 roundedSm py-1 buttonTap7"
+                                    />
+                                        </div>
+                                    </div>
+
+                                    <div class="profile__options myT-1 ">
+                                        <label
+                                            for="reference"
+                                            class="label capitalize myB-1 semi"
+                                            >Are goods collected from Seller/Exporter?</label
+                                        >
+
+                                        <div
+                                            class="profile__options__default d-flex myT-1"
+                                        >
+                                           
+                                        <input
+                                        type="button"
+                                        value="Yes"
+                                        class="border-0 pointer white buttonTap10 px-1 roundedSm py-1 checked"
+                                    />
+                                    <input
+                                        type="button"
+                                        value="No"
+                                        class="White border-0 pointer px-1 roundedSm py-1 buttonTap10"
+                                    />
+                                        </div>
+                                    </div>
+
+
+                                    <div class="profile__options myT-1 grid-2-4">
+                                        <label
+                                            for="reference"
+                                            class="label capitalize myB-1 semi"
+                                            >Are goods delivered to Importer/Receiver?</label
+                                        >
+
+                                        <div
+                                            class="profile__options__default d-flex myT-1"
+                                        >
+                                           
+                                        <input
+                                        type="button"
+                                        value="Yes"
+                                        class="border-0 pointer white buttonTap11 px-1 roundedSm py-1 checked"
+                                    />
+                                    <input
+                                        type="button"
+                                        value="No"
+                                        class="White border-0 pointer px-1 roundedSm py-1 buttonTap11"
+                                    />
+                                        </div>
+                                    </div>
+
+                                    <div class="field__profile grid-full w-32"> 
+                                        <label
+                                            class="label capitalize myB-2 semi"
+                                            >Default Customisable Text</label 
+                                        >
+                                        <input
+                                            type="text" 
+                                            
+                                            class="input p-1 border-gray rounded outline-0 w-100 myT-1"
+                                            value='Duty paid by receiver'
+                                            list="package__type"
+                                        />
+
+                                        <datalist id="package__type">
+                                            <option
+                                                value="Duty paid by receiver"
+                                            ></option>
+                                            <option
+                                                value="Duty paid by sender"
+                                            ></option>
+                                         
+                                           
+                                        </datalist>
+                                    </div>
+                                    
+                                    <div class="field__profile"> 
+                                        <label
+                                            class="label capitalize myB-2 semi"
+                                            >Reason for export</label 
+                                        >
+                                        <input
+                                            type="text" 
+                                            
+                                            class="input p-1 border-gray rounded outline-0 w-100 myT-1"
+                                            value='Duty paid by receiver'
+                                            list="package__type"
+                                        />
+
+                                        <datalist id="package__type">
+                                            <option
+                                                value="Duty paid by receiver"
+                                            ></option>
+                                            <option
+                                                value="Duty paid by sender"
+                                            ></option>
+                                         
+                                           
+                                        </datalist>
+                                    </div>
+
+
+                                    <div class="reasons d-grid grid-column-2">
+
+                                        <div class="profile__options ">
+                                            <label
+                                                for="reference"
+                                                class="label capitalize myB-1 semi"
+                                                >Add GST/VAT</label
+                                            >
+    
+                                            <div
+                                                class="profile__options__default d-flex myT-1"
+                                            >
+                                               
+                                            <input
+                                            type="button"
+                                            value="Yes"
+                                            class="border-0 pointer white buttonTap12 px-1 roundedSm py-1 checked"
+                                        />
+                                        <input
+                                            type="button"
+                                            value="No"
+                                            class="White border-0 pointer px-1 roundedSm py-1 buttonTap12"
+                                        />
+                                            </div>
+                                        </div>
+
+
+                                        <div class="profile__options ml-minus-4 ">
+                                            <label
+                                                for="reference"
+                                                class="label capitalize myB-1 semi"
+                                                >Include Freight Total</label
+                                            >
+    
+                                            <div
+                                                class="profile__options__default d-flex myT-1"
+                                            >
+                                               
+                                            <input
+                                            type="button"
+                                            value="Yes"
+                                            class="border-0 pointer white buttonTap13 px-1 roundedSm py-1 checked"
+                                        />
+                                        <input
+                                            type="button"
+                                            value="No"
+                                            class="White border-0 pointer px-1 roundedSm py-1 buttonTap13"
+                                        />
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+                                    <div class="textarea  myB-2 grid-full">
+                                        <label
+                                                for="reference"
+                                                class="label capitalize myB-1 semi"
+                                                >Include Freight Total</label
+                                            >
+
+                                            <textarea placeholder="Enter your opinion here ..." class="w-91 h-15 p-1 border-gray rounded-3 no-resize myT-1 text-left" ></textarea>
+                                        
+                                    </div>
+                                    
+                                    <button class="save d-flex align-center w-46">
+                                        <img src="images/check-btn-white.svg"  alt="" />
+                                        save changes
+                                    </button>
+                                    </div>
+
                                 </div>
                             </form>
                         </section>
+
+                        <!--! Section Payment content -->
                         <section class="payment content-text">
-                            Payment settings
+                            <h1
+                                class="title normal capitalize border-bottom pyB-1"
+                            >
+                                Payment Method
+                            </h1>
+
+                            <button
+                            class="outline d-flex align-center myT-2 myB-2"
+                        >
+                            <img
+                                src="images/icon-plus.svg"
+                                alt="add commodity"
+                                class="w-small"
+                            />
+                            <span class="txtMd ml-1"
+                                >add payment method</span>
+                            
+                        </button>
+                        <div class="payments__cards">
+
+                            <!-- !Card-1 -->
+                            <div class="payment__card border-green">
+                                <div class="payment__card__check">
+                                    <img src="images/icon-green-check.svg" alt="check">
+                                </div>
+                                <div class="payment__card__number">
+                                    <img src="images/visa-logo.svg" alt="logo-visa">
+                                    <p class="payment__card__text">
+                                        visa(.....1234)
+                                    </p>
+                                </div>
+                                <div class="payment__card__details d-flex">
+                                    <div class="payment__card__details--expire">
+                                        <label class=''>Expire date</label>
+                                        <input type="button" class='' value='03/2030'>
+                                    </div>
+                                    <div class="payment__card__details--value">
+                                        <label class=''>CVV</label>
+                                        <input type="button" class='' value='123'>
+                                    </div>
+                                </div>
+
+                                <div class="payment__card__buttons">
+                                    <button class="payment__card__buttons--edit">
+                                        <img src="images/icon-edit-green.svg" alt="edit"> Edit
+                                    </button>
+                                    <button class="payment__card__buttons--delete">
+                                        <img src="images/icon-trash.svg" alt="edit"> Delete
+                                    </button>
+
+
+                                </div>
+                            </div>
+
+                            <!-- !Card-2 -->
+                            <div class="payment__card">
+                                <div class="payment__card__check ">
+                                    <img src="images/icon-green-check.svg" alt="check" class='opacity-0'>
+                                </div>
+                                <div class="payment__card__number">
+                                    <img src="images/visa-logo.svg" alt="logo-visa">
+                                    <p class="payment__card__text">
+                                        visa(.....1234)
+                                    </p>
+                                </div>
+                                <div class="payment__card__details d-flex">
+                                    <div class="payment__card__details--expire">
+                                        <label class=''>Expire date</label>
+                                        <input type="button" class='' value='03/2030'>
+                                    </div>
+                                    <div class="payment__card__details--value">
+                                        <label class=''>CVV</label>
+                                        <input type="button" class='' value='123'>
+                                    </div>
+                                </div>
+
+                                <div class="payment__card__buttons">
+                                    <button class="payment__card__buttons--edit">
+                                        <img src="images/icon-edit-green.svg" alt="edit"> Edit
+                                    </button>
+                                    <button class="payment__card__buttons--delete">
+                                        <img src="images/icon-trash.svg" alt="edit"> Delete
+                                    </button>
+
+
+                                </div>
+                            </div>
+                            <!-- !Card-3 -->
+                            <div class="payment__card">
+                                <div class="payment__card__check ">
+                                    <img src="images/icon-green-check.svg" alt="check" class='opacity-0'>
+                                </div>
+                                <div class="payment__card__number">
+                                    <img src="images/visa-logo.svg" alt="logo-visa">
+                                    <p class="payment__card__text">
+                                        visa(.....1234)
+                                    </p>
+                                </div>
+                                <div class="payment__card__details d-flex">
+                                    <div class="payment__card__details--expire">
+                                        <label class=''>Expire date</label>
+                                        <input type="button" class='' value='03/2030'>
+                                    </div>
+                                    <div class="payment__card__details--value">
+                                        <label class=''>CVV</label>
+                                        <input type="button" class='' value='123'>
+                                    </div>
+                                </div>
+
+                                <div class="payment__card__buttons">
+                                    <button class="payment__card__buttons--edit">
+                                        <img src="images/icon-edit-green.svg" alt="edit"> Edit
+                                    </button>
+                                    <button class="payment__card__buttons--delete">
+                                        <img src="images/icon-trash.svg" alt="edit"> Delete
+                                    </button>
+
+
+                                </div>
+                            </div>
+                        </div>
+
                         </section>
                     </div>
                 </div>

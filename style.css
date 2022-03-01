@@ -170,6 +170,10 @@
   margin-left: 4rem;
 }
 
+.ml-minus-4 {
+  margin-left: -4rem;
+}
+
 .mr-auto {
   margin-right: auto;
 }
@@ -257,12 +261,20 @@
   text-align: center;
 }
 
+.w-60 {
+  width: 60%;
+}
+
 .w-70 {
   width: 70%;
 }
 
 .w-80 {
   width: 80%;
+}
+
+.w-91 {
+  width: 91%;
 }
 
 .w-100 {
@@ -304,6 +316,10 @@
 .grid-column-9-max {
   grid-template-columns: repeat(9, -webkit-max-content);
   grid-template-columns: repeat(9, max-content);
+}
+
+.grid-full {
+  grid-column: 1/-1;
 }
 
 .grid-2-4 {
@@ -351,6 +367,10 @@
 
 .transparent {
   background-color: transparent !important;
+}
+
+.border-green {
+  border: 1px solid var(--clr-green) !important;
 }
 
 .border-gray {
@@ -467,6 +487,14 @@
   width: 7rem;
 }
 
+.w-32 {
+  width: 32%;
+}
+
+.w-46 {
+  width: 46%;
+}
+
 .w-40 {
   width: 40%;
 }
@@ -501,6 +529,10 @@
 
 .w-85rem {
   width: 85%;
+}
+
+.h-15 {
+  height: 15rem;
 }
 
 .h-02 {
@@ -627,6 +659,34 @@
 
 .translateY-3rem {
   transform: translateY(-3rem);
+}
+
+.no-resize {
+  resize: none;
+}
+
+.border-box {
+  box-sizing: border-box;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
+textarea::-moz-placeholder {
+  color: #333 !important;
+}
+
+textarea:-ms-input-placeholder {
+  color: #333 !important;
+}
+
+textarea::placeholder {
+  color: #333 !important;
 }
 
 @-webkit-keyframes fadeIn {
@@ -1300,4 +1360,115 @@ button.add-carrier:hover {
 .button-email:hover {
   opacity: 0.9;
   cursor: pointer;
+}
+
+.tooltip {
+  position: relative;
+  cursor: pointer;
+  font-size: 1.3rem;
+}
+.tooltip:hover .tooltip__text {
+  visibility: visible;
+  opacity: 1;
+  top: -4.7rem;
+  transition: all 0.2s ease;
+}
+.tooltip__text {
+  position: absolute;
+  top: -3.7rem;
+  left: 3rem;
+  width: 26rem;
+  background-color: var(--clr-light-gray);
+  padding: 2rem;
+  line-height: 1.7rem;
+  border-radius: 0.5rem;
+  box-shadow: -2px 1rem 4rem 0px rgba(0, 0, 0, 0.048);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease;
+}
+.tooltip__text::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  margin-right: 1rem;
+  border: solid 1rem transparent;
+  border-right-color: var(--clr-light-gray);
+  left: -2rem;
+  top: 4.8rem;
+}
+
+.payments__cards .payment__card {
+  width: 84%;
+  padding-inline: 2rem;
+  border-radius: 0.7rem;
+  border: 1px solid var(--clr-dark-gray);
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: -webkit-min-content repeat(3, 1fr);
+  grid-template-columns: min-content repeat(3, 1fr);
+  margin-bottom: 2rem;
+}
+.payments__cards .payment__card__check {
+  padding-right: 2rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+  border-right: 1px solid var(--clr-dark-gray);
+  height: 100%;
+}
+.payments__cards .payment__card__number {
+  padding: 2rem 0;
+  justify-self: start;
+  margin-left: 2rem;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.payments__cards .payment__card__text {
+  margin-top: 2rem;
+}
+.payments__cards .payment__card__details {
+  gap: 2rem;
+}
+.payments__cards .payment__card__details > * {
+  display: flex;
+  flex-direction: column;
+}
+.payments__cards .payment__card__details label {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.payments__cards .payment__card__details input {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: transparent;
+  outline: none;
+  border-radius: 3px;
+  border: 1px solid var(--clr-dark-gray);
+}
+.payments__cards .payment__card__buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-self: end;
+}
+.payments__cards .payment__card__buttons > *:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.payments__cards .payment__card__buttons button {
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+  font-weight: 600 !important;
+  border: none;
+  background-color: transparent;
+}
+.payments__cards .payment__card__buttons button img {
+  margin-right: 0.5rem;
+}
+.payments__cards .payment__card__buttons--delete img {
+  width: 2.1rem;
 }/*# sourceMappingURL=style.css.map */

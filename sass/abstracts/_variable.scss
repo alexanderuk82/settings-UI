@@ -136,6 +136,10 @@ $fontWeight: (
     margin-left: 4rem;
 }
 
+.ml-minus-4 {
+    margin-left: -4rem;
+}
+
 .mr-auto {
     margin-right: auto;
 }
@@ -204,11 +208,17 @@ $fontWeight: (
 .text-center {
     text-align: center;
 }
+.w-60 {
+    width: 60%;
+}
 .w-70 {
     width: 70%;
 }
 .w-80 {
     width: 80%;
+}
+.w-91 {
+    width: 91%;
 }
 .w-100 {
     width: 100%;
@@ -239,6 +249,9 @@ $fontWeight: (
 }
 .grid-column-9-max {
     grid-template-columns: repeat(9, max-content);
+}
+.grid-full {
+    grid-column: 1/-1;
 }
 .grid-2-4 {
     grid-column: 2/4;
@@ -277,6 +290,9 @@ $fontWeight: (
     background-color: transparent !important;
 }
 
+.border-green {
+    border: 1px solid var(--clr-green) !important;
+}
 .border-gray {
     border: 1.5px solid var(--clr-dark-gray);
 }
@@ -365,6 +381,12 @@ $fontWeight: (
 .w-7 {
     width: 7rem;
 }
+.w-32 {
+    width: 32%;
+}
+.w-46 {
+    width: 46%;
+}
 .w-40 {
     width: 40%;
 }
@@ -393,6 +415,9 @@ $fontWeight: (
     width: 85%;
 }
 
+.h-15 {
+    height: 15rem;
+}
 .h-02 {
     height: 0.2rem;
 }
@@ -501,6 +526,24 @@ $fontWeight: (
 
 .translateY-3rem {
     transform: translateY(-3rem);
+}
+
+.no-resize {
+    resize: none;
+}
+
+.border-box {
+    box-sizing: border-box;
+}
+.text-left {
+    text-align: left;
+}
+.opacity-0 {
+    opacity: 0;
+}
+
+textarea::placeholder {
+    color: #333 !important;
 }
 //Animation keyframes
 

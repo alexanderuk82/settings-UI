@@ -166,6 +166,11 @@ const toggle5 = document.querySelectorAll('.buttonTap5')
 const toggle6 = document.querySelectorAll('.buttonTap6')
 const toggle7 = document.querySelectorAll('.buttonTap7')
 const toggle8 = document.querySelectorAll('.buttonTap8')
+const toggle9 = document.querySelectorAll('.buttonTap9')
+const toggle10 = document.querySelectorAll('.buttonTap10')
+const toggle11 = document.querySelectorAll('.buttonTap11')
+const toggle12 = document.querySelectorAll('.buttonTap12')
+const toggle13 = document.querySelectorAll('.buttonTap13')
 
 // !Toggle 1 Individual user
 toggle.forEach((button) => {
@@ -262,6 +267,66 @@ toggle8.forEach((button) => {
 })
 function removeToogle8() {
     toggle8.forEach((btns) => {
+        btns.classList.remove('checked')
+    })
+}
+// !Toggle 9 Make reference mandatory
+toggle9.forEach((button) => {
+    button.addEventListener('click', () => {
+        removeToogle9()
+        button.classList.add('checked')
+    })
+})
+function removeToogle9() {
+    toggle9.forEach((btns) => {
+        btns.classList.remove('checked')
+    })
+}
+// !Toggle 10 Make reference mandatory
+toggle10.forEach((button) => {
+    button.addEventListener('click', () => {
+        removeToogle10()
+        button.classList.add('checked')
+    })
+})
+function removeToogle10() {
+    toggle10.forEach((btns) => {
+        btns.classList.remove('checked')
+    })
+}
+// !Toggle 11 Make reference mandatory
+toggle11.forEach((button) => {
+    button.addEventListener('click', () => {
+        removeToogle11()
+        button.classList.add('checked')
+    })
+})
+function removeToogle11() {
+    toggle11.forEach((btns) => {
+        btns.classList.remove('checked')
+    })
+}
+// !Toggle 12 Make reference mandatory
+toggle12.forEach((button) => {
+    button.addEventListener('click', () => {
+        removeToogle12()
+        button.classList.add('checked')
+    })
+})
+function removeToogle12() {
+    toggle12.forEach((btns) => {
+        btns.classList.remove('checked')
+    })
+}
+// !Toggle 13 Make reference mandatory
+toggle13.forEach((button) => {
+    button.addEventListener('click', () => {
+        removeToogle13()
+        button.classList.add('checked')
+    })
+})
+function removeToogle13() {
+    toggle13.forEach((btns) => {
         btns.classList.remove('checked')
     })
 }
@@ -370,6 +435,12 @@ const boundInter = document.querySelector('#international')
 const boundDomes = document.querySelector('#domestic')
 const contentDoc = document.querySelector('#documents')
 const contentPack = document.querySelector('#packages')
+const standard = document.querySelector('#standard')
+const thermal = document.querySelector('#thermal')
+const addresShip = document.querySelector('#address-ship')
+const globalSearch = document.querySelector('#global-search')
+const invoiceComer = document.querySelector('#invoice-comercial')
+const invoiceProfor = document.querySelector('#invoice-proforma')
 
 //
 // !FIRST ROW FOR DEFAULT PAGES
@@ -401,6 +472,24 @@ btnProfile.forEach((btns) => {
         } else if (btns === contentDoc) {
             contentDoc.classList.add('active')
             contentPack.classList.remove('active')
+        } else if (btns === standard) {
+            standard.classList.add('active')
+            thermal.classList.remove('active')
+        } else if (btns === thermal) {
+            standard.classList.remove('active')
+            thermal.classList.add('active')
+        } else if (btns === addresShip) {
+            globalSearch.classList.remove('active')
+            addresShip.classList.add('active')
+        } else if (btns === globalSearch) {
+            globalSearch.classList.add('active')
+            addresShip.classList.remove('active')
+        } else if (btns === invoiceComer) {
+            invoiceComer.classList.add('active')
+            invoiceProfor.classList.remove('active')
+        } else if (btns === invoiceProfor) {
+            invoiceComer.classList.remove('active')
+            invoiceProfor.classList.add('active')
         }
     })
 })
