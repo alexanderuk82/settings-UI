@@ -1468,7 +1468,5 @@ button.add-carrier:hover {
 }
 .payments__cards .payment__card__buttons button img {
   margin-right: 0.5rem;
-}
-.payments__cards .payment__card__buttons--delete img {
-  width: 2.1rem;
+  width: 1.5rem;
 }/*# sourceMappingURL=style.css.map */
