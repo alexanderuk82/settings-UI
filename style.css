@@ -535,6 +535,10 @@
   height: 15rem;
 }
 
+.h-60vh {
+  height: 60vh;
+}
+
 .h-02 {
   height: 0.2rem;
 }
@@ -675,6 +679,12 @@
 
 .opacity-0 {
   opacity: 0;
+}
+
+.visible {
+  top: 3.7rem !important;
+  visibility: visible !important;
+  opacity: 1 !important;
 }
 
 textarea::-moz-placeholder {
@@ -1469,4 +1479,67 @@ button.add-carrier:hover {
 .payments__cards .payment__card__buttons button img {
   margin-right: 0.5rem;
   width: 1.5rem;
+}
+
+.pages__entries {
+  margin-top: 4rem;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  text-transform: capitalize;
+}
+.pages__entries button {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border: transparent;
+  background-color: #fff;
+  border: 2px solid var(--clr-dark-gray);
+  border-radius: 3px;
+  outline: 0;
+}
+.pages__entries button svg {
+  width: 2rem;
+  margin-left: 0.6rem;
+}
+.pages__entries__show {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+}
+.pages__entries__show__list {
+  position: absolute;
+  top: 2.7rem;
+  left: 47%;
+  transform: translateX(-50%);
+  padding: 1rem 2.4rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 2.3rem;
+  box-shadow: -2px 1rem 7rem 0px rgba(0, 0, 0, 0.16);
+  transition: all 0.2s ease;
+  visibility: hidden;
+  opacity: 0;
+}
+.pages__entries__show__list--link {
+  text-decoration: none;
+  color: inherit;
+}
+.pages__entries__show__list--link:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.pages__entries__nav {
+  display: flex;
+  flex-direction: row;
+}
+.pages__entries__nav .active-entries {
+  background-color: var(--clr-green);
+  color: #fff;
+  border-color: var(--clr-green);
+}
+.pages__entries__showing span {
+  color: var(--clr-green);
+  font-weight: 600;
 }/*# sourceMappingURL=style.css.map */

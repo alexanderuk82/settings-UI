@@ -418,6 +418,9 @@ $fontWeight: (
 .h-15 {
     height: 15rem;
 }
+.h-60vh {
+    height: 60vh;
+}
 .h-02 {
     height: 0.2rem;
 }
@@ -540,6 +543,11 @@ $fontWeight: (
 }
 .opacity-0 {
     opacity: 0;
+}
+.visible {
+    top: 3.7rem !important;
+    visibility: visible !important;
+    opacity: 1 !important;
 }
 
 textarea::placeholder {

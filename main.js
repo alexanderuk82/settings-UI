@@ -494,5 +494,18 @@ btnProfile.forEach((btns) => {
     })
 })
 
-// !FIRST ROW FOR BOUND DEFAULT
-//
+// !Navigation page entries bottom navigation
+
+const dropBox = document.querySelectorAll('.pages__entries__show__list')
+const list = document.querySelector('#list-box')
+const btnEntries = document
+    .querySelectorAll('.pages__entries__show button')
+    .forEach((el) => {
+        el.addEventListener('click', toggleBtn)
+    })
+
+function toggleBtn() {
+    dropBox.forEach((box) => {
+        box.classList.toggle('visible')
+    })
+}
