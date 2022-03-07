@@ -134,6 +134,14 @@
   margin-bottom: 3rem;
 }
 
+.myT-xsm {
+  margin-top: 0.2rem;
+}
+
+.myB-xsm {
+  margin-bottom: 0.2rem;
+}
+
 .my2 {
   margin: 2rem 0;
 }
@@ -238,6 +246,10 @@
   padding-inline: 2rem;
 }
 
+.px-5 {
+  padding-inline: 5rem;
+}
+
 .py-1 {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -251,6 +263,10 @@
 .py-sm {
   padding-top: 0.8em;
   padding-bottom: 0.8em;
+}
+
+.pyB-xsm {
+  padding-bottom: 0.2rem;
 }
 
 .text-end {
@@ -685,6 +701,10 @@
   top: 3.7rem !important;
   visibility: visible !important;
   opacity: 1 !important;
+}
+
+.translate-y-1 {
+  transform: translateY(-1rem);
 }
 
 textarea::-moz-placeholder {
